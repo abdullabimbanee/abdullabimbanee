@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abdulla bimbanee Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <style>
+        :root {
+            --primary: #FFCC00;
+            --background: #141414;
+            --card-bg: #1C1C1C;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background);
+            color: white;
+        }
+
+        .section-padding {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+
+        .header-text {
+            color: var(--primary);
+        }
+
+        .typing-cursor {
+            display: inline-block;
+            width: 4px;
+            height: 35px;
+            background-color: var(--primary);
+            animation: blink 0.7s infinite;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .nav-link.active {
+            color: var(--primary);
+            position: relative;
+        }
+
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 3px;
+            background-color: var(--primary);
+            border-radius: 2px;
+        }
+
+        .scroll-icon {
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-10px);
+            }
+
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Utility for text visibility over dynamic background */
+        .content-wrapper {
+            background: rgba(20, 20, 20, 0.2);
+            /* Subtle dark overlay for contrast */
+            padding: 2rem 3rem;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body class="text-white bg-gray-900">
+
+    <nav id="navbar" class="fixed top-0 w-full bg-gray-900 bg-opacity-95 backdrop-blur-sm z-50 shadow-lg"
+        role="navigation">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+            <a href="#home" class="text-3xl font-bold header-text">SHAIK MOHAMMED ABDULLA</a>
+
+            <div id="nav-links" class="hidden md:flex space-x-8 text-lg font-semibold text-gray-400">
+                <a href="#home" class="nav-link hover:text-yellow-500 transition active" data-section="home">Home</a>
+                <a href="#about" class="nav-link hover:text-yellow-500 transition" data-section="about">About</a>
+                <a href="#resume" class="nav-link hover:text-yellow-500 transition" data-section="resume">Resume</a>
+                <a href="#projects" class="nav-link hover:text-yellow-500 transition"
+                    data-section="projects">Projects</a>
+                <a href="#contact" class="nav-link hover:text-yellow-500 transition" data-section="contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="h-screen flex items-center justify-center text-center pt-16 relative overflow-hidden">
+
+            <div id="particles-js" class="absolute inset-0 opacity-70"></div>
+
+            <div class="z-10 content-wrapper">
+                <p class="text-gray-400 text-lg sm:text-xl mb-4">HEY! I AM</p>
+                <h1 class="text-5xl sm:text-7xl lg:text-8xl font-black mb-4">ABDULLA BIMBANEE</h1>
+                <div class="text-3xl sm:text-4xl lg:text-5xl font-semibold flex justify-center">
+                    <span class="text-white mr-2">I like</span>
+                    <span id="typing-text" class="header-text"></span>
+                    <span class="typing-cursor"></span>
+                </div>
+            </div>
+            <a href="#about" class="absolute bottom-10 text-yellow-500 scroll-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-chevrons-down">
+                    <path d="m7 5 5 5 5-5" />
+                    <path d="m7 15 5 5 5-5" />
+                </svg>
+            </a>
+        </section>
+
+        <section id="about" class="section-padding max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-5xl font-bold mb-12 text-center md:text-left">About Me</h2>
+            <div class="flex flex-col md:flex-row gap-10 items-center md:items-start">
+
+                <div class="w-full md:w-1/3 flex justify-center">
+                    <img src="https://media.licdn.com/dms/image/v2/D5603AQGM7_wIbjpkmw/profile-displayphoto-shrink_800_800/B56ZVWW0MlHQAc-/0/1740910577480?e=1761782400&v=beta&t=W9BVQEA0P1AidQt6L33FjYtkK9yYLkahhQwLO5YcN1k"
+                        alt="Shaik MOHAMMED ABDULLA Profile" class="rounded-lg shadow-xl object-cover w-72 h-96"
+                        onerror="this.onerror=null; this.src='https://placehold.co/400x500/1C1C1C/FFCC00?text=Image+Missing';">
+                </div>
+
+                <div class="w-full md:w-2/3">
+                    <p class="text-xl text-gray-300 mb-8">I like working with new Tools and technology</p>
+                    <div class="space-y-4 text-lg">
+                        <p><span class="text-gray-400 font-semibold mr-2">Name:</span> Shaik MOHAMMED ABDULLA</p>
+                        <p><span class="text-gray-400 font-semibold mr-2">Email:</span> shaikbimbani@gmail.com</p>
+                        <p><span class="text-gray-400 font-semibold mr-2">Phone:</span> (+91) 9652850244</p>
+                        <p><span class="text-gray-400 font-semibold mr-2">Country:</span> India</p>
+                        <p><span class="text-gray-400 font-semibold mr-2">City:</span> Hyderabad</p>
+                    </div>
+
+                    <button
+                        class="mt-10 bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-yellow-600 transition duration-300">
+                        <a href="https://drive.google.com/file/d/1-zvOpLgm3eP8XGX3Odv2_0u_CxBZXXFf/view?usp=sharing"
+                            target="_blank">Download CV</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="section-padding max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-5xl font-bold mb-16 text-center header-text">Resume</h2>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-4xl font-bold mb-8 border-l-4 border-yellow-500 pl-4">Education</h3>
+
+                    <div class="space-y-8">
+                        <div class="p-6 bg-gray-800 rounded-lg shadow-xl transition hover:shadow-yellow-500/30">
+                            <h4 class="text-2xl font-semibold text-white">Bachelor of Engineer</h4>
+                            <p class="text-yellow-500 italic my-1">2024 - 2027</p>
+                            <p class="text-gray-400">Vidya jyothi Institute of technology</p>
+                            <p class="text-gray-400 text-sm mt-1">Computer Science and Data Science</p>
+                        </div>
+                        <div class="p-6 bg-gray-800 rounded-lg shadow-xl transition hover:shadow-yellow-500/30">
+                            <h4 class="text-2xl font-semibold text-white">Diploma</h4>
+                            <p class="text-yellow-500 italic my-1">2021 - 2024</p>
+                            <p class="text-gray-400">Government Insitute Of Electronics</p>
+                        </div>
+                        <div class="p-6 bg-gray-800 rounded-lg shadow-xl transition hover:shadow-yellow-500/30">
+                            <h4 class="text-2xl font-semibold text-white">Primary School</h4>
+                            <p class="text-yellow-500 italic my-1">2020 - 2021</p>
+                            <p class="text-gray-400">Hyderabad Model High School</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-4xl font-bold mb-8 border-l-4 border-yellow-500 pl-4">Experience</h3>
+
+                    <div class="space-y-8">
+                        <div class="p-6 bg-gray-800 rounded-lg shadow-xl transition hover:shadow-yellow-500/30">
+                            <h4 class="text-2xl font-semibold text-white">Web Devlopment intern</h4>
+                            <p class="text-yellow-500 italic my-1">Jan 2024 - Jun 2024</p>
+                            <p class="text-gray-400">Nexus Technology Hyderabad</p>
+                        </div>
+
+                        <div class="p-6 bg-gray-800 rounded-lg shadow-xl transition hover:shadow-yellow-500/30">
+                            <h4 class="text-2xl font-semibold text-white">Data Analyst Intern</h4>
+                            <p class="text-yellow-500 italic my-1">Dec 2023 - Jan 2024</p>
+                            <p class="text-gray-400">Research Center of Imarat, Hyderabad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-padding max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl font-bold mb-8 text-center header-text">Skills</h3>
+            <div class="flex flex-wrap justify-center gap-4 mb-20 max-w-4xl mx-auto">
+                <div
+                    class="p-3 bg-gray-800 rounded-lg text-lg font-medium text-yellow-500 border border-yellow-500 transition hover:bg-yellow-500/20">
+                    JavaScript</div>
+                <div
+                    class="p-3 bg-gray-800 rounded-lg text-lg font-medium text-yellow-500 border border-yellow-500 transition hover:bg-yellow-500/20">
+                    Angular</div>
+                <div
+                    class="p-3 bg-gray-800 rounded-lg text-lg font-medium text-yellow-500 border border-yellow-500 transition hover:bg-yellow-500/20">
+                    TypeScript</div>
+                <div
+                    class="p-3 bg-gray-800 rounded-lg text-lg font-medium text-yellow-500 border border-yellow-500 transition hover:bg-yellow-500/20">
+                    Flutter</div>
+                <div
+                    class="p-3 bg-gray-800 rounded-lg text-lg font-medium text-yellow-500 border border-yellow-500 transition hover:bg-yellow-500/20">
+                    .NET</div>
+                <div
+                    class="p-3 bg-gray-800 rounded-lg text-lg font-medium text-yellow-500 border border-yellow-500 transition hover:bg-yellow-500/20">
+                    Python</div>
+                <div
+                    class="p-3 bg-gray-800 rounded-lg text-lg font-medium text-yellow-500 border border-yellow-500 transition hover:bg-yellow-500/20">
+                    React</div>
+                <div
+                    class="p-3 bg-gray-800 rounded-lg text-lg font-medium text-yellow-500 border border-yellow-500 transition hover:bg-yellow-500/20">
+                    AWS</div>
+                <div
+                    class="p-3 bg-gray-800 rounded-lg text-lg font-medium text-yellow-500 border border-yellow-500 transition hover:bg-yellow-500/20">
+                    C++</div>
+                <div
+                    class="p-3 bg-gray-800 rounded-lg text-lg font-medium text-yellow-500 border border-yellow-500 transition hover:bg-yellow-500/20">
+                    java</div>
+                <div
+                    class="p-3 bg-gray-800 rounded-lg text-lg font-medium text-yellow-500 border border-yellow-500 transition hover:bg-yellow-500/20">
+                    git</div>
+                <div
+                    class="p-3 bg-gray-800 rounded-lg text-lg font-medium text-yellow-500 border border-yellow-500 transition hover:bg-yellow-500/20">
+                    sql</div>
+                <div
+                    class="p-3 bg-gray-800 rounded-lg text-lg font-medium text-yellow-500 border border-yellow-500 transition hover:bg-yellow-500/20">
+                    Mangodb</div>
+                <div
+                    class="p-3 bg-gray-800 rounded-lg text-lg font-medium text-yellow-500 border border-yellow-500 transition hover:bg-yellow-500/20">
+                    Docker</div>
+                <div
+                    class="p-3 bg-gray-800 rounded-lg text-lg font-medium text-yellow-500 border border-yellow-500 transition hover:bg-yellow-500/20">
+                    React</div>
+            </div>
+
+
+            <h3 class="text-4xl font-bold mb-12 text-center header-text">Projects</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div
+                    class="p-6 bg-gray-800 rounded-lg shadow-xl hover:shadow-yellow-500/30 transition duration-300 border border-transparent hover:border-yellow-500">
+                    <svg class="w-8 h-8 text-yellow-500 mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M12 2a10 10 0 0 0-9.09 5.56 10 10 0 0 0 3.32 10.88 10 10 0 0 0 11.54.44" />
+                        <path d="m14 2 6 6" />
+                    </svg>
+                    <h4 class="text-2xl font-semibold text-white mb-2">Deaf Sign to Text Converter</h4>
+                    <p class="text-sm text-yellow-500 mb-4">AI / Computer Vision / Python</p>
+                    <p class="text-gray-400">AI-driven real-time application that converts sign language gestures into
+                        text to enable barrier-free communication.</p>
+                    <a href="https://github.com/abdullabimbanee/deafsign-to-text" target="_blank"
+                        class="mt-4 inline-block text-yellow-500 hover:text-yellow-600 text-sm font-semibold">View Code
+                        →</a>
+                </div>
+
+                <div
+                    class="p-6 bg-gray-800 rounded-lg shadow-xl hover:shadow-yellow-500/30 transition duration-300 border border-transparent hover:border-yellow-500">
+                    <svg class="w-8 h-8 text-yellow-500 mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M14 19a2 2 0 0 0-2 2H8a2 2 0 0 0-2-2V7a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2z" />
+                        <path d="M10 2v3" />
+                        <path d="M14 2v3" />
+                        <path d="M18 13c1.7 0 3 1.3 3 3v3h-6v-3c0-1.7 1.3-3 3-3z" />
+                    </svg>
+                    <h4 class="text-2xl font-semibold text-white mb-2">Health Monitoring Application</h4>
+                    <p class="text-sm text-yellow-500 mb-4">Python / System Tools</p>
+                    <p class="text-gray-400">Real-time resource tracker ensuring the stability and optimal performance
+                        of your project's underlying system (CPU, RAM, Disk).</p>
+                    <a href="https://github.com/abdullabimbanee/health_monitoring" target="_blank"
+                        class="mt-4 inline-block text-yellow-500 hover:text-yellow-600 text-sm font-semibold">View Code
+                        →</a>
+                </div>
+
+                <div
+                    class="p-6 bg-gray-800 rounded-lg shadow-xl hover:shadow-yellow-500/30 transition duration-300 border border-transparent hover:border-yellow-500">
+                    <svg class="w-8 h-8 text-yellow-500 mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M15 13H9c-1.1 0-2 .9-2 2v5c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2v-5c0-1.1-.9-2-2-2z" />
+                        <circle cx="12" cy="7" r="4" />
+                    </svg>
+                    <h4 class="text-2xl font-semibold text-white mb-2">Weather Forecast App</h4>
+                    <p class="text-sm text-yellow-500 mb-4">API Integration / Web Dev</p>
+                    <p class="text-gray-400">A responsive web application built to consume and display real-time weather
+                        data from an external API.</p>
+                    <a href="https://github.com/abdullabimbanee/weather-app" target="_blank"
+                        class="mt-4 inline-block text-yellow-500 hover:text-yellow-600 text-sm font-semibold">View Code
+                        →</a>
+                </div>
+
+                <div
+                    class="p-6 bg-gray-800 rounded-lg shadow-xl hover:shadow-yellow-500/30 transition duration-300 border border-transparent hover:border-yellow-500">
+                    <svg class="w-8 h-8 text-yellow-500 mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                    </svg>
+                    <h4 class="text-2xl font-semibold text-white mb-2">Real-Time Chat Bot</h4>
+                    <p class="text-sm text-yellow-500 mb-4">Flutter / Firebase</p>
+                    <p class="text-gray-400">A full-stack, real-time chat application using Flutter for the UI and
+                        Firebase for database and authentication.</p>
+                    <a href="https://github.com/abdullabimbanee/chat_bot" target="_blank"
+                        class="mt-4 inline-block text-yellow-500 hover:text-yellow-600 text-sm font-semibold">View Code
+                        →</a>
+                </div>
+
+                <div
+                    class="p-6 bg-gray-800 rounded-lg shadow-xl hover:shadow-yellow-500/30 transition duration-300 border border-transparent hover:border-yellow-500">
+                    <svg class="w-8 h-8 text-yellow-500 mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M8 2v4" />
+                        <path d="M16 2v4" />
+                        <path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8" />
+                        <path d="m16 20 2 2 4-4" />
+                    </svg>
+                    <h4 class="text-2xl font-semibold text-white mb-2">Task Manager (To-Do)</h4>
+                    <p class="text-sm text-yellow-500 mb-4">Web Dev / Local Storage</p>
+                    <p class="text-gray-400">Classic To-do list application with task management, reminders, and status
+                        tracking features.</p>
+                    <a href="https://github.com/abdullabimbanee/task_manager" target="_blank"
+                        class="mt-4 inline-block text-yellow-500 hover:text-yellow-600 text-sm font-semibold">View Code
+                        →</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-5xl font-bold mb-16 text-center header-text">Contact</h2>
+
+            <div class="flex flex-wrap justify-center gap-6 mb-16">
+                <div
+                    class="w-full sm:w-56 p-6 bg-gray-800 rounded-lg text-center shadow-xl border border-transparent hover:border-yellow-500 transition">
+                    <svg class="w-8 h-8 text-yellow-500 mx-auto mb-3" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 3.08 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    <p class="text-lg font-semibold text-white">Contact Number</p>
+                    <p class="text-gray-400">+91 9652850244</p>
+                </div>
+                <div
+                    class="w-full sm:w-56 p-6 bg-gray-800 rounded-lg text-center shadow-xl border border-transparent hover:border-yellow-500 transition">
+                    <svg class="w-8 h-8 text-yellow-500 mx-auto mb-3" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                    <p class="text-lg font-semibold text-white">Email Address</p>
+                    <p class="text-gray-400">shaikbimbani@gmail.com</p>
+                </div>
+                <div
+                    class="w-full sm:w-56 p-6 bg-gray-800 rounded-lg text-center shadow-xl border border-transparent hover:border-yellow-500 transition">
+                    <svg class="w-8 h-8 text-yellow-500 mx-auto mb-3" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M2 12h20" />
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                    </svg>
+                    <p class="text-lg font-semibold text-white">Website</p>
+                    <p class="text-gray-400">abdullabimbanee.me </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-10 items-stretch">
+                <div class="w-full md:w-1/2 flex justify-center items-center">
+                    <img src="https://media.licdn.com/dms/image/v2/D5603AQGM7_wIbjpkmw/profile-displayphoto-shrink_800_800/B56ZVWW0MlHQAc-/0/1740910577480?e=1761782400&v=beta&t=W9BVQEA0P1AidQt6L33FjYtkK9yYLkahhQwLO5YcN1k"
+                        alt="Shaik MOHAMMED ABDULLA Contact"
+                        class="rounded-lg shadow-xl object-cover w-full h-full min-h-[300px]"
+                        onerror="this.onerror=null; this.src='https://placehold.co/450x400/374151/FFCC00?text=Image+Missing';">
+                </div>
+
+                <div class="w-full md:w-1/2 p-8 bg-gray-800 rounded-lg shadow-xl">
+                    <form action="#" method="POST" class="space-y-6">
+                        <input type="text" name="name" placeholder="Your Name" required
+                            class="w-full p-3 bg-gray-900 text-white border border-gray-700 rounded-lg focus:outline-none focus:border-yellow-500">
+                        <input type="email" name="email" placeholder="Your Email" required
+                            class="w-full p-3 bg-gray-900 text-white border border-gray-700 rounded-lg focus:outline-none focus:border-yellow-500">
+                        <textarea name="message" rows="5" placeholder="Your Message" required
+                            class="w-full p-3 bg-gray-900 text-white border border-gray-700 rounded-lg focus:outline-none focus:border-yellow-500"></textarea>
+                        <button type="submit"
+                            class="w-full bg-yellow-500 text-gray-900 font-bold py-3 rounded-lg shadow-lg hover:bg-yellow-600 transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-20 py-10 bg-gray-800 text-gray-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex justify-center space-x-6 mb-6">
+
+                <a href="https://www.linkedin.com/in/shaik-mohammed-abdulla-bimbanee-ab5a48259" target="_blank"
+                    class="hover:text-yellow-500 transition">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 0-12 0v5h2v6h4v-6h2l1-2H6V8a4 4 0 0 1 8 0z" />
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" x2="17.5" y1="6.5" y2="6.5" />
+                    </svg>
+                </a>
+
+                <a href="https://github.com/abdullabimbanee" target="_blank" class="hover:text-yellow-500 transition">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 4c0 0-1.12-.49-3.79 1.39a17.2 17.2 0 0 0-7.66 0C5.2 3.51 4.08 4 4.08 4a5.07 5.07 0 0 0-.09.77A5.44 5.44 0 0 0 2 10.27c0 4.47 3.3 5.66 6.44 7A3.37 3.37 0 0 0 9 19.13V22" />
+                    </svg>
+                </a>
+
+                <a href="#" target="_blank" class="hover:text-yellow-500 transition">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 0-12 0v5h2v6h4v-6h2l1-2H6V8a4 4 0 0 1 8 0z" />
+                    </svg>
+                </a>
+
+            </div>
+            <p>&copy; 2025 SHAIK MOHAMMED ABDULLA. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        // --- JAVASCRIPT FOR SCROLLING AND TYPING EFFECTS ---
+
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('main section');
+        const navbar = document.getElementById('navbar');
+        const typingTextElement = document.getElementById('typing-text');
+        const typingWords = ["Developing.", "Coding.", "Innovating.", "Learning."];
+
+        // 1. TYPING EFFECT LOGIC
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function type() {
+            const currentWord = typingWords[wordIndex];
+            const display = isDeleting
+                ? currentWord.substring(0, charIndex - 1)
+                : currentWord.substring(0, charIndex + 1);
+
+            typingTextElement.textContent = display;
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                // Done typing word, wait and start deleting
+                isDeleting = true;
+                setTimeout(type, 1500);
+            } else if (isDeleting && charIndex === 0) {
+                // Done deleting word, move to the next word
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % typingWords.length;
+                setTimeout(type, 500);
+            } else {
+                // Continue typing or deleting
+                charIndex += isDeleting ? -1 : 1;
+                setTimeout(type, isDeleting ? 75 : 150);
+            }
+        }
+
+        // 2. SCROLLING AND ACTIVE NAV LINK LOGIC
+        function updateActiveLink() {
+            let current = 'home';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - navbar.offsetHeight - 50; // Offset for sticky bar
+                const sectionBottom = sectionTop + section.offsetHeight;
+
+                if (scrollY >= sectionTop && scrollY < sectionBottom) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('data-section') === current) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        // 3. EVENT LISTENERS AND INITIALIZATION
+        document.addEventListener('DOMContentLoaded', () => {
+            // Start the typing effect
+            type();
+
+            // Set up scroll listener
+            window.addEventListener('scroll', updateActiveLink);
+
+            // Set up smooth scroll for internal links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+
+                    if (targetSection) {
+                        const offsetTop = targetSection.offsetTop - navbar.offsetHeight;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Initial active link check
+            updateActiveLink();
+
+            // 🌟 4. PARTICLES.JS INITIALIZATION LOGIC 🌟
+            if (document.getElementById('particles-js')) {
+                particlesJS('particles-js', {
+                    "particles": {
+                        "number": {
+                            "value": 60,
+                            "density": {
+                                "enable": true,
+                                "value_area": 800
+                            }
+                        },
+                        "color": {
+                            "value": "#FFCC00"
+                        },
+                        "shape": {
+                            "type": "circle",
+                        },
+                        "opacity": {
+                            "value": 0.5,
+                            "random": false,
+                        },
+                        "size": {
+                            "value": 2,
+                            "random": true,
+                        },
+                        "line_linked": {
+                            "enable": true,
+                            "distance": 150,
+                            "color": "#FFCC00",
+                            "opacity": 0.3,
+                            "width": 1
+                        },
+                        "move": {
+                            "enable": true,
+                            "speed": 1.5,
+                            "direction": "none",
+                            "random": false,
+                            "straight": false,
+                            "out_mode": "out",
+                        }
+                    },
+                    "interactivity": {
+                        "detect_on": "canvas",
+                        "events": {
+                            "onhover": {
+                                "enable": true,
+                                "mode": "grab"
+                            },
+                            "resize": true
+                        },
+                        "modes": {
+                            "grab": {
+                                "distance": 140,
+                                "line_linked": {
+                                    "opacity": 0.8
+                                }
+                            },
+                        }
+                    },
+                    "retina_detect": true
+                });
+            }
+        });
+
+    </script>
+</body>
+
+</html>
