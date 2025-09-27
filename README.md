@@ -14,7 +14,7 @@ I enjoy working with new tools and technology, and I'm always open to collaborat
 
 | Category | Technologies |
 | :--- | :--- |
-| **Languages** | Python, JavaScript, TypeScript, C#, C++ |
+| **Languages** | Python, JavaScript, TypeScript, C, Java, R |
 | **Frontend** | Angular, React, Flutter (Mobile), HTML, CSS, Tailwind CSS |
 | **Backend / DB**| .NET, Node.js, Firebase, MySQL |
 | **DevOps / Cloud**| AWS, Docker, Git, GitHub, Jenkins, Linux |
@@ -27,7 +27,7 @@ I enjoy working with new tools and technology, and I'm always open to collaborat
 
 My goal is to continuously bridge the gap between software development and data analysis. Here's what I'm focused on right now:
 
-* **Deepening expertise** in Angular and .NET for scalable full-stack applications.
+* **Deepening expertise** in React and Node.js for scalable full-stack applications.
 * **Building projects** that integrate AI/ML models with web/mobile interfaces.
     * *Example Project:* Developing a real-time system to monitor and visualize large datasets.
 * **Exploring cloud infrastructure** on AWS/GCP to deploy and manage production-ready applications.
