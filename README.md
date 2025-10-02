@@ -43,6 +43,7 @@ My goal is to continuously bridge the gap between software development and data 
 | **Health Monitoring Application** | Python, System Tools | Real-time resource tracker for monitoring system performance (CPU, RAM, Disk). | [View Code](https://github.com/abdullabimbanee/health_monitoring) |
 | **Real-Time Chat Bot** | Flutter, Firebase | A full-stack, real-time chat application for mobile platforms. | [View Code](https://github.com/abdullabimbanee/chat_bot) |
 | **Weather Forecast App** | Web Dev, API Integration | A responsive web app using a public API to display real-time weather data. | [View Code](https://github.com/abdullabimbanee/weather-app) |
+| **Task Manager(To-Do)** | React, Firebase | Classic To-do list application with task management, reminders, and status tracking features. | [View Code](https://github.com/abdullabimbanee/task_manager) |
 
 ---
 
