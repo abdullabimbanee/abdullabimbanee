@@ -16,7 +16,7 @@ I enjoy working with new tools and technology, and I'm always open to collaborat
 | :--- | :--- |
 | **Languages** | Python, JavaScript, TypeScript, C, Java, R |
 | **Frontend** | Angular, React, Flutter (Mobile), HTML, CSS, Tailwind CSS |
-| **Backend / DB**| .NET, Node.js, Firebase, MySQL |
+| **Backend / DB**| Django, Node.js, Firebase, MySQL |
 | **DevOps / Cloud**| AWS, Docker, Git, GitHub, Jenkins, Linux |
 | **Data Tools** | Pandas, NumPy, Data Visualization Libraries (Matplotlib/Seaborn) |
 | **Tools** | Git, Postman, VS Code, Power BI |
