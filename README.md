@@ -54,7 +54,4 @@ My goal is to continuously bridge the gap between software development and data 
 | **LinkedIn** | [Shaik Mohammed Abdulla Bimbanee](https://www.linkedin.com/in/shaik-mohammed-abdulla-bimbanee-ab5a48259) |
 | **Email** | [shaikbimbani@gmail.com](mailto:shaikbimbani@gmail.com) |
 
-⭐️ Feel free to check out my repositories and star what you like!
-abdullabimbanee/abdullabimbanee is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+
